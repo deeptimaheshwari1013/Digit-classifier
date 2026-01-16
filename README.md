@@ -17,15 +17,15 @@ Below I've written a few notes that helped me understand things better:
 
 -For the input-to-hidden layer, we use ReLU activation, and for the hidden-to-output layer we use softmax activation.
 
-#Activation Functions
+# Activation Functions
 
--Softmax activation converts vectors into probabilities, and that helps us in categorising (it calculates probabilities).
+- Softmax activation converts vectors into probabilities, and that helps us in categorising (it calculates probabilities).
 
--It's only used as an output layer in a neural network.
+- It's only used as an output layer in a neural network.
 
--We consider the higher probability as the actual output.
+- We consider the higher probability as the actual output.
 
-#Environment and Setup
+# Environment and Setup
 
 -I went to Jupyter Notebook next. I had to select a kernel (engine that actually runs the code), and I had two options that confused me:
 
@@ -35,7 +35,7 @@ Below I've written a few notes that helped me understand things better:
 
 -I then switched to Google Colab — much easier!
 
-#Libraries Used
+# Libraries Used
 
 -NumPy: Stores large numerical data efficiently, supports linear algebra, statistics, and random numbers, and improves performance.
 
@@ -45,7 +45,7 @@ Below I've written a few notes that helped me understand things better:
 
 -Pylab: An old convenience interface integrating NumPy and Matplotlib into a single namespace. No longer recommended. Instead of pylab, use explicit imports.
 
-#Data Loading and Preprocessing
+# Data Loading and Preprocessing
 
 -I load all the training data using read_csv from the Pandas library.
 
@@ -59,7 +59,7 @@ Below I've written a few notes that helped me understand things better:
 
 -To control randomness (pseudo-randomness), we use np.random.seed().
 
-#Data Splitting
+# Data Splitting
 
 -data_dev = data[0:1000].T   --> Selects the first 1000 rows from data and Transposes the matrix (Stores it in data_dev)
 
@@ -75,7 +75,7 @@ Shapes and Conventions
 
 - __ is a Python convention for a variable we don't care about.
 
-#One-Hot Encoding
+# One-Hot Encoding
 
 -The one_hot function converts a vector of class labels into one-hot encoded vectors.
 
@@ -97,11 +97,11 @@ Shapes and Conventions
 
 -One-hot encoding removes order and distance between classes.
 
-#Backpropagation
+# Backpropagation
 
 -Backprop works backwards: Measure error at the output Push that error backward through the network Compute how much each weight contributed to the error
 
-#other notes:
+# other notes:
 
 re is the regular expression module, used for pattern matching in strings.
 
